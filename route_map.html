@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_32ba97c559a1ebca32c9dcdf96ab2c2f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_32ba97c559a1ebca32c9dcdf96ab2c2f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_32ba97c559a1ebca32c9dcdf96ab2c2f = L.map(
+                "map_32ba97c559a1ebca32c9dcdf96ab2c2f",
+                {
+                    center: [41.3851, 2.1734],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac4ead8318d3e2164a58942a59fd580d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var marker_c7b802133b2efa58b96656aae571f648 = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_23b3188ecc11a90e33230488aea94543 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7b802133b2efa58b96656aae571f648.setIcon(icon_23b3188ecc11a90e33230488aea94543);
+        
+    
+        var popup_d3e3866c9c7b71748a1133c9738e83eb = L.popup({"maxWidth": 400});
+
+        
+            var html_0207cc5302ea938a18f1ff6911e1d787 = $(`<div id="html_0207cc5302ea938a18f1ff6911e1d787" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Барселона</b><br>             🏃‍♂️ Отъезд на 1-й день (до полудня)<br>             🚀 Прибытие на 11-й день (днём)<br>             💰 Бюджет: €0 / €0 всего<br>             🚗  🚄 Поезд в Сан-Себастьян (€50–€100) в 0-й день.<br> 🛫 Прилетаем из Лиссабона на 11-й день путешествия.          </div>         </div>`)[0];
+            popup_d3e3866c9c7b71748a1133c9738e83eb.setContent(html_0207cc5302ea938a18f1ff6911e1d787);
+        
+
+        marker_c7b802133b2efa58b96656aae571f648.bindPopup(popup_d3e3866c9c7b71748a1133c9738e83eb)
+        ;
+
+        
+    
+    
+            var marker_384e896f0a36ae734293ed77e522dc5d = L.marker(
+                [43.3208, -1.9822],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_4818b3c9bfba198bc4ee1a5b4309b6b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_384e896f0a36ae734293ed77e522dc5d.setIcon(icon_4818b3c9bfba198bc4ee1a5b4309b6b6);
+        
+    
+        var popup_484666c9b3082c8b1048508473b768d5 = L.popup({"maxWidth": 400});
+
+        
+            var html_779e64cfbc6292e279afbbb52ddf3711 = $(`<div id="html_779e64cfbc6292e279afbbb52ddf3711" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Сан-Себастьян</b><br>             🗓️ Здесь проведем 2 дней<br>             🚀 Прибытие на 1-й день (днём)<br>             🏃‍♂️ Отъезд на 3-й день (до 11 утра)<br>             🍽️ Гастрономический тур по пинчос-барам.<br>🏖️ Пляж Ла-Конча.<br>🌅 Прогулка по набережной.<br>🚶 Хайк на гору Ургуль с видом на бухту.<br>🍽️ Что попробовать из местной кухни: 🍣 Попробовать пинчос в баре Gandarias.<br>             💰 Бюджет: €300 / €300 всего<br>             🚗 🚄 Поезд из Барселоны (€50–€100).<br>🚗 Взять авто в Сан-Себастьяне (около €60/день).         </div>         </div>`)[0];
+            popup_484666c9b3082c8b1048508473b768d5.setContent(html_779e64cfbc6292e279afbbb52ddf3711);
+        
+
+        marker_384e896f0a36ae734293ed77e522dc5d.bindPopup(popup_484666c9b3082c8b1048508473b768d5)
+        ;
+
+        
+    
+    
+            var marker_2ed11ac68db47fdc501c08501c4e64ec = L.marker(
+                [43.263, -2.935],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_eff47bca94602da9dd17c45efa51872d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ed11ac68db47fdc501c08501c4e64ec.setIcon(icon_eff47bca94602da9dd17c45efa51872d);
+        
+    
+        var popup_7654322219a6c588a195c62c08929a94 = L.popup({"maxWidth": 400});
+
+        
+            var html_c11a65b597eeb1440ba6d9fe4fdaf4ae = $(`<div id="html_c11a65b597eeb1440ba6d9fe4fdaf4ae" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Бильбао</b><br>             🗓️ Здесь проведем 1 дней<br>             🚀 Прибытие на 3-й день (утром)<br>             🏃‍♂️ Отъезд на 4-й день (до 11 утра)<br>             🖼️ Посещение музея Гуггенхайма.<br>🌆 Старый город и рынок Рибера.<br>🍽️ Что попробовать из местной кухни: 🍷 Попробовать баскское вино 'Txakoli' и тапасы.<br>             💰 Бюджет: €180 / €480 всего<br>             🚗 🚗 Взять авто в Сан-Себастьяне (около €60/день).         </div>         </div>`)[0];
+            popup_7654322219a6c588a195c62c08929a94.setContent(html_c11a65b597eeb1440ba6d9fe4fdaf4ae);
+        
+
+        marker_2ed11ac68db47fdc501c08501c4e64ec.bindPopup(popup_7654322219a6c588a195c62c08929a94)
+        ;
+
+        
+    
+    
+            var marker_0a66b424edc77163464e6dd4d4d64c9f = L.marker(
+                [43.3614, -5.8593],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_2db8032bf1f9961809df5a15dce4d6e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a66b424edc77163464e6dd4d4d64c9f.setIcon(icon_2db8032bf1f9961809df5a15dce4d6e6);
+        
+    
+        var popup_8212f7e638d75913a1b2f29c762e82dd = L.popup({"maxWidth": 400});
+
+        
+            var html_d4cf121272705256babddd563473e930 = $(`<div id="html_d4cf121272705256babddd563473e930" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Овьедо</b><br>             🗓️ Здесь проведем 1 дней<br>             🚀 Прибытие на 4-й день (днём)<br>             🏃‍♂️ Отъезд на 5-й день (до 11 утра)<br>             🍺 Дегустация сидра в баре.<br>🏰 Осмотр собора Святого Сальвадора.<br>🏞️ Легкий хайк в Пикос-де-Европа.<br>🍽️ Что попробовать из местной кухни: 🍏 Попробовать сидр и 'Fabada Asturiana' (фасоль с мясом).<br>             💰 Бюджет: €120 / €600 всего<br>             🚗 🚗 На авто из Бильбао (около 2 часов).         </div>         </div>`)[0];
+            popup_8212f7e638d75913a1b2f29c762e82dd.setContent(html_d4cf121272705256babddd563473e930);
+        
+
+        marker_0a66b424edc77163464e6dd4d4d64c9f.bindPopup(popup_8212f7e638d75913a1b2f29c762e82dd)
+        ;
+
+        
+    
+    
+            var marker_f71649e8620ee266b3e4cdc861b8aee8 = L.marker(
+                [41.1496, -8.611],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_610909f8ac7d66de9e819154745d27e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f71649e8620ee266b3e4cdc861b8aee8.setIcon(icon_610909f8ac7d66de9e819154745d27e6);
+        
+    
+        var popup_22be15790c162c70b0dd659edf2873cd = L.popup({"maxWidth": 400});
+
+        
+            var html_3dcc7e42de24f375626c493ad4be4179 = $(`<div id="html_3dcc7e42de24f375626c493ad4be4179" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Порту</b><br>             🗓️ Здесь проведем 2 дней<br>             🚀 Прибытие на 5-й день (вечером)<br>             🏃‍♂️ Отъезд на 7-й день (до 11 утра)<br>             🍷 Дегустация портвейна.<br>🚤 Прогулка по реке Дору.<br>🎶 Концерт фаду в Рибейре.<br>🍽️ Что попробовать из местной кухни: 🍤 Попробовать Francesinha (сэндвич с мясом и соусом).<br>             💰 Бюджет: €250 / €850 всего<br>             🚗 🚗 На авто из Овьедо (около 5 часов).<br>🚗 Сдать авто в Порту.<br>🛵 Взять макси-скутер в Порту (€30/день).         </div>         </div>`)[0];
+            popup_22be15790c162c70b0dd659edf2873cd.setContent(html_3dcc7e42de24f375626c493ad4be4179);
+        
+
+        marker_f71649e8620ee266b3e4cdc861b8aee8.bindPopup(popup_22be15790c162c70b0dd659edf2873cd)
+        ;
+
+        
+    
+    
+            var marker_4268a534fac925b22ad346410ae1da23 = L.marker(
+                [40.6405, -8.6538],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_74035931509b941834a085047a8fd2fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4268a534fac925b22ad346410ae1da23.setIcon(icon_74035931509b941834a085047a8fd2fe);
+        
+    
+        var popup_6bccfffd1be5d18d6ea97524fa10a605 = L.popup({"maxWidth": 400});
+
+        
+            var html_29181f225b404f138e459bd3923e9816 = $(`<div id="html_29181f225b404f138e459bd3923e9816" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Авеиро</b><br>             🗓️ Здесь проведем 1 дней<br>             🚀 Прибытие на 7-й день (днём)<br>             🏃‍♂️ Отъезд на 8-й день (до 11 утра)<br>             🛶 Прогулка по каналам на молисейро (традиционной лодке).<br>🏠 Посещение старого города с яркими домиками.<br>🍽️ Что попробовать из местной кухни: 🍬 Попробовать 'Ovos Moles' (десерт из яичных желтков и сахара).<br>             💰 Бюджет: €100 / €950 всего<br>             🚗 🛵 Взять макси-скутер в Порту (€30/день).         </div>         </div>`)[0];
+            popup_6bccfffd1be5d18d6ea97524fa10a605.setContent(html_29181f225b404f138e459bd3923e9816);
+        
+
+        marker_4268a534fac925b22ad346410ae1da23.bindPopup(popup_6bccfffd1be5d18d6ea97524fa10a605)
+        ;
+
+        
+    
+    
+            var marker_cf5ebc8a877d88e307021dd7f6e1d24b = L.marker(
+                [39.6012, -9.0707],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_cc60233038deea85ffda0deab0d5eb42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf5ebc8a877d88e307021dd7f6e1d24b.setIcon(icon_cc60233038deea85ffda0deab0d5eb42);
+        
+    
+        var popup_79bbf608d51b649d9f5859d0ec8928ef = L.popup({"maxWidth": 400});
+
+        
+            var html_a4da6537d44d9332a7cfece2e6dcc482 = $(`<div id="html_a4da6537d44d9332a7cfece2e6dcc482" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Назаре</b><br>             🗓️ Здесь проведем 1 дней<br>             🚀 Прибытие на 8-й день (утром)<br>             🏃‍♂️ Отъезд на 9-й день (до 11 утра)<br>             🌊 Наблюдение за гигантскими волнами.<br>🏄 Посмотреть на серферов у утёса.<br>🌅 Хайк по утёсам с видом на океан.<br>🍽️ Что попробовать из местной кухни: 🐙 Попробовать свежего осьминога на гриле.<br>             💰 Бюджет: €150 / €1100 всего<br>             🚗 🛵 На скутере из Авеиро (около 2 часов).         </div>         </div>`)[0];
+            popup_79bbf608d51b649d9f5859d0ec8928ef.setContent(html_a4da6537d44d9332a7cfece2e6dcc482);
+        
+
+        marker_cf5ebc8a877d88e307021dd7f6e1d24b.bindPopup(popup_79bbf608d51b649d9f5859d0ec8928ef)
+        ;
+
+        
+    
+    
+            var marker_fd18b75e90e67a9dd18c1bf52ffb2285 = L.marker(
+                [39.36, -9.1578],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_9a23060c7ab39a24997a6d30665d953e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd18b75e90e67a9dd18c1bf52ffb2285.setIcon(icon_9a23060c7ab39a24997a6d30665d953e);
+        
+    
+        var popup_e5eecdeaf92572bb795effb07913a23e = L.popup({"maxWidth": 400});
+
+        
+            var html_af71f4585ba77fa027038f44186ff01e = $(`<div id="html_af71f4585ba77fa027038f44186ff01e" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Обидуш</b><br>             🗓️ Здесь проведем 1 дней<br>             🚀 Прибытие на 9-й день (днём)<br>             🏃‍♂️ Отъезд на 10-й день (до 11 утра)<br>             🏰 Осмотр средневекового замка.<br>🍒 Попробовать ликёр джинжинья в шоколадных стаканчиках.<br>🍽️ Что попробовать из местной кухни: 🍫 Попробовать джинжинью в шоколадных стаканах.<br>             💰 Бюджет: €120 / €1220 всего<br>             🚗 🛵 На скутере из Назаре (около 1 часа).         </div>         </div>`)[0];
+            popup_e5eecdeaf92572bb795effb07913a23e.setContent(html_af71f4585ba77fa027038f44186ff01e);
+        
+
+        marker_fd18b75e90e67a9dd18c1bf52ffb2285.bindPopup(popup_e5eecdeaf92572bb795effb07913a23e)
+        ;
+
+        
+    
+    
+            var marker_c0bcc6e2564e3a2010b75312811165ca = L.marker(
+                [38.7169, -9.1399],
+                {}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+    
+            var icon_9df3825e6d43b0a2e5a7169df7fc4186 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0bcc6e2564e3a2010b75312811165ca.setIcon(icon_9df3825e6d43b0a2e5a7169df7fc4186);
+        
+    
+        var popup_ce824544af0b6184fd893f88e2e49f2e = L.popup({"maxWidth": 400});
+
+        
+            var html_dcf064b3e3239ef0431226aa3a6ca1a5 = $(`<div id="html_dcf064b3e3239ef0431226aa3a6ca1a5" style="width: 100.0%; height: 100.0%;">         <div style="width: 350px;">             <b>Лиссабон</b><br>             🗓️ Здесь проведем 2 дней<br>             🚀 Прибытие на 10-й день (днём)<br>             🏃‍♂️ Отъезд на 11-й день (любое время)<br>             🎶 Фаду в районе Альфама.<br>🚶 Прогулка по Байрру-Алту.<br>🍤 Ужин с морепродуктами.<br>🍽️ Что попробовать из местной кухни: 🥐 Попробовать пастель-де-ната в Pasteis de Belem.<br>             💰 Бюджет: €200 / €1420 всего<br>             🚗 🛵 Сдать макси-скутер в Лиссабоне.<br>🛫 Улетаем домой в Барселону.         </div>         </div>`)[0];
+            popup_ce824544af0b6184fd893f88e2e49f2e.setContent(html_dcf064b3e3239ef0431226aa3a6ca1a5);
+        
+
+        marker_c0bcc6e2564e3a2010b75312811165ca.bindPopup(popup_ce824544af0b6184fd893f88e2e49f2e)
+        ;
+
+        
+    
+    
+            var poly_line_1005fb945fe26322aef14b38078e9824 = L.polyline(
+                [[41.3851, 2.1734], [43.3208, -1.9822], [43.263, -2.935], [43.3614, -5.8593], [41.1496, -8.611], [40.6405, -8.6538], [39.6012, -9.0707], [39.36, -9.1578], [38.7169, -9.1399]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_32ba97c559a1ebca32c9dcdf96ab2c2f);
+        
+</script>
+</html>
